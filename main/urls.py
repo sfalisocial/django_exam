@@ -18,6 +18,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^', include('apps.logreg.urls')),
-    url(r'^travels/', include('apps.travel.urls')),
-    # url(r'^exam/', include('apps.exam.urls', namespace="exam")),
+    url(r'^exam/', include('apps.exam.urls', namespace="exam")),
 ]
