@@ -23,8 +23,8 @@ def login(request):
         else:
             request.session['logged_user'] = user.id
             messages.success(request, "Welcome {}!".format(user.name))
-            return redirect('exam:index')
-    return redirect('exam:index')
+            return redirect('homepage')
+    return redirect('homepage')
 
 def register(request):
     if request.method == "POST":
